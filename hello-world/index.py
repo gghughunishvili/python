@@ -13,3 +13,9 @@ print("Jake" not in student_names)
 print(student_names)
 print(student_names[1:])
 print(student_names[1:-2])
+for name in student_names:
+    print(f"Loops student_names: {name}")
+    print("With another formatter: {0}".format(name))
+
+for index in range(100, 200, 17):
+    print("Index looping: {0}".format(index))
