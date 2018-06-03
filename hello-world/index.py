@@ -35,3 +35,20 @@ student = {
 }
 print(student["name"])
 print(student.get("last_name", "No Last Name"))
+print(student.keys())
+print(student.values())
+
+# Exceptions
+print("============ Exceptions =============")
+student["last_name"] = "TEMP_LAST_NAME"
+try:
+    last_name = student["last_name"]
+    some_var = 3 + "Test"
+except KeyError:
+    print("last_name key doesn't exist")
+except TypeError:
+    print("Can't add string and integer")
+except Exception:
+    print("Unknown Error")
+
+
